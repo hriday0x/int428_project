@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Outfit Recommender</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️ Smart Outfit Recommender</h1>
+            <p>Get perfect clothing suggestions based on weather</p>
+        </header>
+        
+        <main>
+            <div class="search-box">
+                <input type="text" id="location-input" placeholder="Enter city name (e.g., London, Paris)">
+                <button id="search-btn">Get Recommendation</button>
+            </div>
+            
+            <div id="weather-display" class="hidden">
+                <div class="weather-info">
+                    <h2 id="location-name"></h2>
+                    <div class="weather-main">
+                        <div id="weather-icon"></div>
+                        <div>
+                            <p id="temperature"></p>
+                            <p id="conditions"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="outfit-recommendation">
+                    <h3>Recommended Outfit</h3>
+                    <p id="outfit-suggestion"></p>
+                    <div id="accessories"></div>
+                </div>
+            </div>
+            
+            <div id="error-message" class="hidden"></div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
